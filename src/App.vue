@@ -385,7 +385,7 @@ export default {
         this.hintsLeft < this.hintsAllowed
           ? " with " + (this.hintsAllowed - this.hintsLeft) + " hints"
           : ""
-      }.\n${this.actions.join("")}\n trainle.fun${
+      }.\n${this.actions.join("")}\n https://trainle.fun${
         this.gameNumber !== this.daysSinceStart
           ? `?game=${this.gameNumber}`
           : ""
