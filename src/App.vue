@@ -71,8 +71,8 @@ v-app
         Map( :guesses="guesses.map(g=>g.station)" :target="target")
 
       #game-over
-      a(v-if"not isUnlimited() && (fail || win)" href="https://trainle.fun/?unlimited") Play Unlimited?
       v-btn#restart(v-if="isUnlimited() && (fail || win)" type="submit" @click="restart") Play again
+      v-btn.my-4.mx-1.bg-white(v-if="!isUnlimited() && (fail || win)" href="/?unlimited") Play Unlimited?
     div(style="height:80px")
     v-bottom-navigation
       v-footer
